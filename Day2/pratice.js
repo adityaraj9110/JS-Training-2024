@@ -10,7 +10,6 @@ for (let [a, b] of arr) {
   console.log(a, b);
   //   console.log(b);
 }
-c;
 console.log(obj.hasOwnProperty("name"));
 
 console.log(obj["name"]);
