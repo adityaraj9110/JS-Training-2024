@@ -102,38 +102,39 @@ C ==> Filter
 
 1.) Arithimetic operator
 
-Operator Description + Addition - Subtraction \* Multiplication
-\*\* Exponentiation (ES6)
-/ Division
-% Modulus (Division Remainder)
-++ Increment
--- Decrement
+Operator     Description
++             Addition 
+-             Subtraction 
+*             Multiplication
+**            Exponentiation (ES6)
+/             Division
+%             Modulus (Division Remainder)
+++            Increment
+--            Decrement
 
 2.) Assignment Operators
 
-Operator Example Same As
-= x = y x = y
-+= x += y x = x + y
--= x -= y x = x - y
-_= x _= y x = x \* y
-/= x /= y x = x / y
-%= x %= y x = x % y
-**= x **= y x = x \*\* y
+Operator Example   Same As
+=        x = y      x = y
++=       x += y     x = x + y
+-=       x -= y     x = x - y
+_=       x _= y     x = x \* y
+/=       x /= y     x = x / y
+%=       x %= y     x = x % y
+**=      x **=y     x = x \*\* y
 
 3.) Comparison Operator
 
-Operator Description
-== equal to
-=== equal value and equal type
-!= not equal
-!== not equal value or not equal type
-
+Operator         Description
+==                equal to
+===               equal value and equal type
+!=                not equal
+!==               not equal value or not equal type
 >                    greater than
->
-> < less than
-> = greater than or equal to
-> <= less than or equal to
-> ? ternary operator
+>                    less than
+>=                 greater than or equal to
+<=                less than or equal to
+
 
 4.) Logical Operators
 
