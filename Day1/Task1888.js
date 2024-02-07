@@ -7,7 +7,7 @@ const assertObjectEqual = (actualObject, expectedObject) => {
   if (numberOfKeysInActual !== numberOfKeysInExpected) return false;
 
   // now we need to iterate in one object check in other that if other as also same value or not
-  
+
   for (let actualObj in actualObject) {
     if (actualObject[actualObj] !== expectedObject[actualObj]) {
       return false;

@@ -1,0 +1,33 @@
+-----------> What is the Execution Context? ✅
+
+When the JavaScript engine scans a script file, it makes an environment called the Execution Context that handles the entire transformation and execution of the code.
+
+During the context runtime, the parser parses the source code and allocates memory for the variables and functions. The source code is generated and gets executed.
+
+There are two types of execution contexts: global and function. The global execution context is created when a JavaScript script first starts to run, and it represents the global scope in JavaScript. A function execution context is created whenever a function is called, representing the function's local scope.
+
+Phases of the JavaScript Execution Context
+There are two phases of JavaScript execution context:
+
+Creation phase: In this phase, the JavaScript engine creates the execution context and sets up the script's environment. It determines the values of variables and functions and sets up the scope chain for the execution context.
+Execution phase: In this phase, the JavaScript engine executes the code in the execution context. It processes any statements or expressions in the script and evaluates any function calls.
+
+-----------> Event Loop ✅
+
+JavaScript has a runtime model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks. This model is quite different from models in other languages like C and Java
+
+This is also responsble for the execution ordere of the callbacks an function
+
+------------> Event queue ✅
+
+This is like the any other queue .all the callbacks are being wating are not directly pushed into call stack instead they need to wait here .when all the function executed  in call stack then that callbacks will pushed in call stack from queue by the help of event loop
+
+------------> Closures ✅
+
+A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
+There is use of lexical scoping of in this closure concept . ie., we need to use the lexical enviroment concept . This concept is used in case of debouncing.
+ 
+------------> Object ✅
+In js all are object even the array is also object.
+Object is very importnant concept in js.
+there are vaious method that are used in object to manupulate the data

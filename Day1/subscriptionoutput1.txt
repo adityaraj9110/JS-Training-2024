@@ -1,0 +1,28 @@
+ [{
+   redirectTo: 'M1'
+  },
+  {
+    name: 'M1',
+    comp: 'UN',
+  },
+  .............
+  .............
+  {
+    name: 'M4',
+    subComp: [
+      {
+        redirectTo: 'M4B',
+      },
+      {
+        name: 'M4A',
+        comp: 'UN',
+      },
+      {
+        name: 'M4B',
+        comp: 'C4B',
+      },
+    ],
+  },
+  ..............
+  .............
+ ]

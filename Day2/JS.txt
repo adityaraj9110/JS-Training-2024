@@ -147,3 +147,8 @@ Operator Description
 5.) Ternary Operators
 
 a ? b : c evaluates to b if the value of a is true, and otherwise to c
+
+
+study --> promise/callback,HOF,Prototype,deep copy/shallow copy,false vs falsy
+&& tb tk jayega jb tk truthy value milega aur last truthy value retutrtn krega(if all true)
+&& tb tk jayega jb tk truthy value milega aur last falsy value retutrtn krega(if atleast one is false)

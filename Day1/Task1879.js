@@ -20,7 +20,7 @@ const flattenObject = (obj)=>{
     }
     return result;
   }
-  
+     
   const inputData = {
     "keyOne": "value One",
     "keyTwo": "value Two",

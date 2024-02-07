@@ -33,7 +33,7 @@ const findMinimumReversalRequired = (brakets) => {
 };
 
 const mainFuntion = () => {
-  let brakets = "{{{{}}";
+  let brakets = "{{{{}}}{{{";
   //   this funtion will find minimum reversals
   const minimumReversalRequired = findMinimumReversalRequired(brakets);
   console.log(minimumReversalRequired);
