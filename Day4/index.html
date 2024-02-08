@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .container {
+            width: 1400px;
+            max-width: 60%;
+            margin: 0 auto;
+
+        }
+
+        .main {
+            min-height: 100vh;
+            width: 100%;
+            background-color: #DDF3F7;
+        }
+
+        .content {
+            background-color: white;
+            min-height: 100vh;
+            max-height: max-content;
+        }
+
+        .upperDiv {
+            height: 5vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .upperDiv h2 {
+            font-size: 2vw;
+        }
+
+        .infoDiv {
+            border: 1px solid #EBEBEB;
+            border-radius: 1vw;
+            margin: 0 4vw;
+            height: 80%;
+        }
+
+        .infoDivPart1 {
+            background-color: #F5F5F5;
+        }
+
+        .infoDivPart1 .userInfo {
+            padding: 1vw;
+
+        }
+
+        .infoDivPart1 .userInfo h1 {
+            font-size: 1.5vw;
+            text-transform: capitalize;
+        }
+
+        .infoDivPart1 .userInfo h4 {
+            font-size: 1vw;
+            text-transform: capitalize;
+            font-weight: 100;
+            color: black;
+        }
+
+        .infoDivPart1 .userInfo .address_part1 {
+            margin-top: 0.5vw;
+            font-size: 1.2vw;
+            font-weight: 100;
+        }
+
+        .infoDivPart1 .userInfo .address_part2 {
+            margin-top: 0.5vw;
+            font-size: 1.2vw;
+            font-weight: 100;
+        }
+
+        .middleDiv {
+            background-color: #fff;
+            display: flex;
+            gap: 5vw;
+            padding: 1vw;
+            text-transform: capitalize;
+            color: #A7A7A7;
+        }
+
+        .middleDiv h4 {
+            font-size: 1vw;
+        }
+
+        .table {
+            border-top: 1px solid rgba(128, 128, 128, 0.581);
+            width: 100%;
+            height: 100%;
+        }
+
+        table tr {
+            text-align: center;
+
+        }
+
+        th,
+        td {
+            border-bottom: 1px solid #ddd;
+            padding: 1vw;
+        }
+
+        .head_row {
+            background-color: #F5F5F5;
+            color: #A7A7A7;
+            font-weight: 100;
+
+
+        }
+
+        .head_row h3 {
+            font-weight: 100;
+            font-size: 1.1vw;
+            color: black;
+
+        }
+
+        .data_row td h3 {
+            font-size: 1.2vw;
+            font-weight: 100;
+        }
+
+        .dataOfTable td h4 {
+            font-size: 1.2vw;
+            font-weight: 700;
+        }
+
+        .dataOfTable td h5 {
+            font-weight: 700;
+            color: #A7A7A7;
+            font-size: 0.8vw;
+        }
+
+        .dataOfTable :nth-child(3) {
+            border-right: 1px solid #A7A7A7;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                max-width: 100%;
+            }
+
+            .infoDiv .infoDivPart1 .userInfo h1 {
+                font-size: 3vw;
+            }
+
+            .infoDiv .infoDivPart1 .userInfo h4 {
+                font-size: 2.5vw;
+            }
+
+            .infoDiv .infoDivPart1 .userInfo h5 {
+                font-size: 2.5vw;
+            }
+
+            .middleDiv h4 {
+                font-size: 2vw;
+            }
+
+            .head_row th h3 {
+                font-size: 2vw;
+            }
+
+            .data_row td h3 {
+                font-size: 2vw;
+            }
+
+            .dataOfTable td h4 {
+                font-size: 2vw;
+            }
+
+            .dataOfTable td h5 {
+                font-size: 2vw;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .container {
+                max-width: 100%;
+            }
+
+            .infoDiv .infoDivPart1 .userInfo h1 {
+                font-size: 3vw;
+            }
+
+            .infoDiv .infoDivPart1 .userInfo h4 {
+                font-size: 2.5vw;
+            }
+
+            .infoDiv .infoDivPart1 .userInfo h5 {
+                font-size: 2.5vw;
+            }
+
+            .middleDiv h4 {
+                font-size: 2vw;
+            }
+
+            .head_row th h3 {
+                font-size: 2vw;
+            }
+
+            .data_row td h3 {
+                font-size: 2vw;
+            }
+
+            .dataOfTable td h4 {
+                font-size: 2vw;
+            }
+
+            .dataOfTable td h5 {
+                font-size: 2vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 2480 x 3508 pixels -->
+    <div class="main">
+        <div class="content container">
+            <div class="upperDiv">
+                <h2>Statement</h2>
+            </div>
+            <div class="infoDiv">
+                <div class="infoDivPart1">
+                    <div class="userInfo">
+                        <h1 class="name">Lisa Brown</h1>
+                        <h4 class="shopName">Srafted Timberwork</h4>
+                        <h5 class="address_part1">230 Sumit Dr. Kamloops Bc
+                        </h5>
+                        <h5 class="address_part2">Canada V2C 6M1</h5>
+
+                    </div>
+                </div>
+                <div class="middleDiv">
+                    <h4>statement period</h4>
+                    <h4>Nov 01-30,2023</h4>
+                </div>
+                <div class="infoDivPart2">
+                    <table class="table">
+                        <tr class="head_row">
+                            <th>
+                                <h3>Date</h3>
+                            </th>
+                            <th>
+                                <h3>Description</h3>
+                            </th>
+                            <th>
+                                <h3>BITS Earned</h3>
+                            </th>
+                            <th>
+                                <h3>BITS Spent</h3>
+                            </th>
+                        </tr>
+                        <tr class="data_row">
+                            <td>
+                                <h3>Nov-01</h3>
+                            </td>
+                            <td>
+                                <h3>Opening Balance</h3>
+                            </td>
+                            <td></td>
+                            <td>
+                                <h3>2500.00</h3>
+                            </td>
+                        </tr>
+                        <tr class="dataOfTable">
+                            <td>
+                                <h4>Nov-01</h4>
+                            </td>
+                            <td>
+                                <h4>WoodWorks</h4>
+                                <h5>SA07200093</h5>
+                            </td>
+                            <td>
+                                <h4>113.0</h4>
+                            </td>
+                            <td>
+                                <h4>2613.0</h4>
+                            </td>
+                        </tr>
+                        <tr class="dataOfTable">
+                            <td>
+
+                            </td>
+                            <td>
+                                <h4>Closing Total</h4>
+                            </td>
+                            <td>
+                                <h4>1486.0</h4>
+                            </td>
+                            <td>
+                                <h4>251.0</h4>
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

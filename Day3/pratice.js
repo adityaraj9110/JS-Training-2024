@@ -1,10 +1,6 @@
-function some(){
-    let a = 10;
-
-    
-
-    const val = () => {}
-}
+// hoisting
+// this keyword
+// es5 es6
 
 
 

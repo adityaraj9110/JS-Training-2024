@@ -1,0 +1,17 @@
+------> try,catch,finally(✅)
+
+The try statement defines the code block to run (to try).
+
+The catch statement defines a code block to handle any error.
+
+The finally statement defines a code block to run regardless of the result.
+
+try {
+  tryCode - Code block to run
+}
+catch(err) {
+  catchCode - Code block to handle errors
+}
+finally {
+  finallyCode - Code block to be executed regardless of the try result
+}
