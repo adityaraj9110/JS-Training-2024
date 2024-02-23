@@ -1,0 +1,33 @@
+.title{
+        text-align: center;
+        margin-bottom: 20px;
+        padding-right: 70px;
+        opacity: 0.8;
+}
+.container{
+    width: 1400px ;
+    max-width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Avoid direct style of any element, bad practice */
+.form{}
+.input{}
+.button{}
+
+.input .icon img{}
+
+input[type="text"]{
+    width: 70%;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+button{
+    margin-left: 20px;
+    padding: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}

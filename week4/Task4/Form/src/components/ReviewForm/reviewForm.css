@@ -1,0 +1,112 @@
+.review{
+    width: 1400px;
+    max-width: 80%;
+    height: calc(100vh - 80px);
+    margin: 30px auto;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.085);
+    overflow-y: scroll;
+}
+.userInfo-section{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.197);
+    
+    
+}
+.userInfo-section h2{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: capitalize;
+    opacity: 0.8;
+}
+.userInfo{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.userInfo h3{
+    margin-bottom: 15px;
+    opacity: 0.8;
+    white-space: nowrap;
+    
+}
+span{
+     font-weight: 500;
+     opacity: 0.8;
+}
+
+.familyInfo-section{
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.197);
+}
+.familyInfo-section h2{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    opacity: 0.8;
+}
+.family-info{
+    width: fit-content;
+    margin-top: 10px;
+    margin-left: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.familyInfo img{
+    height: 200px;
+    width: 200;
+}
+.familyInfo-section h2{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    opacity: 0.8;
+
+}
+
+.left-part-family{
+    width: 500px;
+    margin-top: 20px;
+    text-align: left;
+    
+}
+.left-part-family h3{
+    margin-bottom: 15px;
+    opacity: 0.8;
+}
+
+.creativeInfo-section{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.197);
+    
+}
+.creativeInfo-section h2{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 15px;
+    opacity: 0.8;
+}
+.creative-info-family{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.197);
+    
+}
+.creative-info-family img{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    object-position: top;
+}
+.btn-complete{
+    margin-top: 15px;
+    text-align: center;
+}
+.btn-review-section{
+    text-align: center;
+}

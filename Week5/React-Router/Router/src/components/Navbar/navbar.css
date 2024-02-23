@@ -1,0 +1,48 @@
+.logo{
+    cursor: pointer;
+    
+}
+.logo h1{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.nav{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav-section{
+    color: white;
+    background-color: rgba( 139, 9, 161);
+
+}
+.container{
+    width: 1400px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.right-part{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+@media screen and (max-width: 768px){
+    .logo h1{
+        font-size: 20px;
+    }
+    .right-part{
+        width: 200px;
+    }
+    .link{
+        font-size: 20px;
+    }
+}

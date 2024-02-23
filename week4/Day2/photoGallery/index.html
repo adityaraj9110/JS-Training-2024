@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="module" src="/src/main.ts"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+  <title>Vite + TS</title>
+</head>
+
+<body>
+  <div class="main">
+    <div id="nav">
+      <div class="logo">
+        <h1>PS <a href="./index.html"></a></h1>
+      </div>
+      <div class="search">
+        <input type="text" name="search" id="searchImage" placeholder="search here.">
+        <i class="ri-search-line searchIcon"></i>
+      </div>
+      <div class="filter">
+        <select name="filterBook" class="filterBook">
+          <option>Pick a choice!</option>
+          <option value="Asc">Asc by price</option>
+          <option value="Dsc">Dsc by price</option>
+        </select>
+      </div>
+      <div class="like">
+        <i class="ri-heart-3-line"></i>
+      </div>
+
+
+    </div>
+
+    <!-- ****************Image Content**************** -->
+
+    <div class="content">
+
+
+    </div>
+
+    <!-- ********************Footer******** -->
+
+    <div class="pagination">
+
+      <div class="navigationButtons">
+        <input type="text" name="pageNumber" disabled class="pageNumber" value="1">
+        <div class="pageInfo">
+          <i class="ri-arrow-left-line" id="previous">Previous</i>
+
+          <div class="buttonFamily">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+          </div>
+          <i class="ri-arrow-right-line" id="next">Next</i>
+
+        </div>
+        <input type="text" class="offset" placeholder="offset" value="6">
+
+        <!-- <p>Offset</p> -->
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

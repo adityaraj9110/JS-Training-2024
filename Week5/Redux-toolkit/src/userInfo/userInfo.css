@@ -1,0 +1,70 @@
+.user-info-form{
+    min-height: 95%;
+    width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.053);
+}
+label{
+    padding: 0 0 0 5px;
+    display: block;
+    font-size: 20px;
+    text-align: left;
+
+}
+label::after{
+    content: "*";
+    color: red;
+}
+.form-control{
+    margin: 20px 40px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"]{
+    width: 500px;
+    min-width: 300px;
+    margin: 5px;
+    padding: 7px;
+    display: block;
+    border: 1px solid rgba(128, 128, 128, 0.311);
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    line-height: 1.4;
+
+}
+.next{
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: rgba(128, 128, 128, 0.142);
+    position: absolute;
+    right: 300px;
+    bottom: 30px;
+    border: 1px solid grey;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+.next:hover{
+    background-color: rgba(128, 128, 128, 0.19) ;
+}
+.button-family-1{
+    width: 600px;
+    margin:20px -12px;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid gray;
+    
+}
+.button-family-1 .btn{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.error {
+  color: red;
+  margin-left: 5px;
+  font-size: 12px;
+  text-align: left;
+}
+

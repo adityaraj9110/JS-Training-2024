@@ -1,0 +1,15 @@
+.addProduct{
+    height: calc(100vh - 160px);
+    border: 1px solid red;
+    margin: 0 auto;
+    width: 1300px;
+    padding: 10px;
+}
+/* sequces of the properities should be aligned */
+.container{
+    display: flex;
+}
+input{
+    padding: 2px;
+}
+

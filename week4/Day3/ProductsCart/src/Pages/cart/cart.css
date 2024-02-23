@@ -1,0 +1,9 @@
+.cartContent{
+    height:calc(100vh - 160px);
+    padding: 2vw;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}

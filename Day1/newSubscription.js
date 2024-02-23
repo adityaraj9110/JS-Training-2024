@@ -6,7 +6,6 @@ const genrateRoute = (mapping) => {
     let moduleName = mapping[key].name;
     let isSubscribe = mapping[key].isSub;
     let subscribeMode = mapping[key].subMode;
-    // console.log(isSubscribe)
     if (moduleName != undefined) {
       if (subscribeMode === undefined) {
         if (!isSubscribe) {

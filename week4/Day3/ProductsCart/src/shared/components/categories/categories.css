@@ -1,0 +1,56 @@
+.categories{
+    height: 30px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    scroll-behavior: smooth;
+    box-shadow: 10px 10px 50px #00000048 ;
+    cursor: pointer;
+
+}
+.categoryItem{
+    height: 100%;
+    max-width: 90%;
+    word-wrap: normal;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+} 
+
+/* Sequence of the properties should be aligned */
+
+.category{
+    height: 100%;
+    width: 50%;
+    padding: 0 15px;
+    border: 1px solid rgba(128, 128, 128, 0.214);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out;
+
+}
+.category:hover{
+    background-color: #2772db90;
+    color: white;
+}
+.category h3{
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+    
+}
+
+.active{
+    color:#2771D8 ;
+}
+
+
+.categoryItem::-webkit-scrollbar {
+    display: none;
+  }
+  .previous ,.next{
+    margin: auto 0;
+    font-size: 30px;
+  }

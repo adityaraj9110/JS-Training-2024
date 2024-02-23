@@ -1,0 +1,272 @@
+/* external font */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,100&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    width: 1400px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 4vw;
+    background-color: #dee1ec;
+
+}
+#logo h1{
+    font-weight: 400;
+}
+.btn{
+    padding: 0.3vw 0.8vw;
+    background-color:#0985e39c ;
+    color: white;
+    font-size: 1vw;
+    text-transform: uppercase;
+    border-radius: 0.5vw;
+    cursor: pointer;
+        border: 1px solid black;
+    text-align: center;
+}
+.btn:hover{
+    background-color:#0985e3db ;
+}
+.search{
+    position: relative;
+}
+#searchImage{
+    padding: 0.5vw 0.8vw;
+    border-radius: 0.5vw;
+    outline: none;
+    border: none;
+    position: relative;
+    width: 20vw;
+}
+.searchIcon{
+   position: absolute;
+   right: 0.5vw;
+   top:0.5vw;
+   cursor: pointer;
+   font-weight: 400;
+}
+.searchIcon:hover{
+    color: #0985e3;
+}
+#filterBook{
+    padding: 0.5vw 0.8vw;
+    border: none;
+    border-radius: 0.5vw;
+    width: 15vw;
+}
+#filterBook:focus option:first-of-type {
+    display: none;
+}
+#like i{
+    font-size: 2.5vw;
+    cursor: pointer;
+    font-weight: 400;
+}
+#logo{
+    cursor: pointer;
+
+}
+
+/* *************************************Image COntent***************** */
+
+#content{
+    /* border: 1px solid red; */
+    height:80%;
+    padding: 2vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    justify-content: space-evenly;
+}
+.imageCard{
+    width: 20vw;
+    min-height: 25vw;
+    max-height: max-content;
+    border: 1px solid ;
+    border-radius: 2vw;
+    overflow: hidden;
+    border: 1px solid #dee1ec98;
+    box-shadow: 10px 2px 25px #dee1ec98 ;
+    margin-bottom: 1vw;
+    /* transition: all .2s ease-in-out; */
+}
+/* #imageCard:hover{
+    transform: scale(1.02);
+} */
+#image{
+    width: 100%;
+    height: 70%;
+}
+#image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#imageInfo{
+    /* border: 1px solid red; */
+    height: calc(100% - 70%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #dee1ec; */
+
+}
+#infoPart1{
+   /* border: 2px solid red; */
+   width: 70%;
+   padding: 1vw;
+   word-wrap: break-word; 
+}
+#infoPart1 h3{
+    font-weight: 400;
+    font-size: 1.3vw;
+    text-wrap: wrap;
+    white-space: normal; 
+    margin: 0;
+}
+#infoPart2{
+    /* border: 1px solid green; */
+    /* align-items: center; */
+    /* align-self: center; */
+    width: 30%;
+    height: 100%;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    
+
+}
+#infoPart2 i{
+    align-self: center;
+    font-size: 2.5vw;
+    cursor: pointer;
+    font-weight: 300;
+    transition: all 0.2s ease-in-out;
+    /* background-color: red; */
+    /* fill: #0985e3; */
+}
+#infoPart2 i:hover{
+    transform: scale(1.2);
+}
+
+/* *****************footer*************** */
+
+#pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13%;
+}
+#navigationButtons{
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+}
+#pageInfo i {
+    cursor: pointer;
+}
+
+#navigationButtons #pageNumber{
+    width: 2vw;
+}
+#navigationButtons #offset{
+        width: 3vw;
+}
+
+@media screen and (max-width: 768px) {
+    #like i{
+        font-size: 5vw;
+    }
+    #content{
+        display: block; 
+        /* border: 2px solid red; */
+    }
+    .imageCard{
+        width: 80vw;
+        height: 55vw;
+        margin: 5vw auto;
+    }
+    #infoPart1 h3{
+        font-size: 4vw;
+    }
+    #infoPart2 i{
+        font-size: 7vw;
+    }
+    #navigationButtons{
+        width: 50vw;
+    }
+    #navigationButtons #pageNumber{
+        width: 5vw;
+    }
+    #navigationButtons #offset{
+        width: 10vw;
+    }
+    #searchImage{
+        width: 30vw;
+    }
+    #filterBook{
+        width: 30vw;
+    }
+
+}
+@media screen and (max-width: 520px) {
+    #like i{
+        font-size: 5vw;
+    }
+    #content{
+        display: block; 
+        /* border: 2px solid red; */
+    }
+    .imageCard{
+        width: 80vw;
+        height: 55vw;
+        margin: 5vw auto;
+    }
+    #infoPart1 h3{
+        font-size: 4vw;
+    }
+    #infoPart2 i{
+        font-size: 7vw;
+    }
+    #navigationButtons{
+        width: 50vw;
+    }
+    #navigationButtons #pageNumber{
+        width: 5vw;
+    }
+    #navigationButtons #offset{
+        width: 10vw;
+    }
+    #searchImage{
+        width: 30vw;
+    }
+    #filterBook{
+        width: 30vw;
+    }
+}

@@ -1,0 +1,57 @@
+.navigationButtons{
+    max-width: 900px;
+    min-width: 400px;
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+}
+.pageInfo{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.buttonFamily{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.buttonFamily button{
+    width: 35px;
+    border: none;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.clicked{
+    color: #2771D8;
+}
+.offset{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.offset select{
+    width: 40%;
+    height: 45%;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+    
+}
+.offset select:focus{
+    border: none;
+}
+.offset select:active{
+    border: none;
+}
+
+.pagination i{
+    font-size: 30px;
+    cursor: pointer;
+}

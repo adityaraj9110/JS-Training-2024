@@ -1,0 +1,19 @@
+.about-section{
+    height: calc(100vh - 100px );
+    
+}
+.about{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-img{
+    width: 50%;
+    height: 40%;
+    padding-top: 5px;
+    text-align: center;
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Station</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="../js/index1.js"  defer></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="nav">
+            <div id="logo">
+                <h1>PS</h1>
+            </div>
+            <div class="search">
+                <input type="text" name="search" id="searchImage" placeholder="search here.">
+                <i class="ri-search-line searchIcon"></i>
+            </div>
+            <div class="filter">
+                <select name="filterBook" id="filterBook">
+                    <option>Pick a choice!</option>
+                    <option value="Asc">Asc by price</option>
+                    <option value="Dsc">Dsc by price</option>
+                </select>
+            </div>
+            <div id="like">
+                <i class="ri-heart-3-line" id="likeButton"></i>
+            </div>
+
+
+        </div>
+
+        <!-- ****************Image Content**************** -->
+
+        <div id="content">
+
+
+        </div>
+
+        <!-- ********************Footer******** -->
+
+        <div id="pagination">
+            <div id="navigationButtons">
+                <div id="pageInfo">
+                    <i class="ri-arrow-left-line" id="previous">Previous</i>
+                    <input type="text" name="pageNumber" id="pageNumber" value="1">
+                    <i class="ri-arrow-right-line" id="next">Next</i>
+                </div>
+                <input type="text" id="offset" placeholder="6" value="6">
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

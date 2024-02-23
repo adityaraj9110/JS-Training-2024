@@ -1,0 +1,66 @@
+.user-info-form{
+    min-height: 95%;
+    width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.053);
+}
+label{
+    padding: 0 0 0 5px;
+    display: block;
+    font-size: 20px;
+    text-align: left;
+
+}
+label::after{
+    content: "*";
+    color: red;
+}
+label[for="email"]::after {
+    content: " ";
+  }
+
+.form-control{
+    margin: 50px 40px;
+}
+input[type="text"],
+input[type="email"],
+input[type="date"]{
+    width: 500px;
+    min-width: 300px;
+    margin: 5px;
+    padding: 7px;
+    display: block;
+    border: 1px solid rgba(128, 128, 128, 0.311);
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    line-height: 1.4;
+
+}
+.next{
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: rgba(128, 128, 128, 0.142);
+    position: absolute;
+    right: 300px;
+    bottom: 30px;
+    border: 1px solid grey;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+.next:hover{
+    background-color: rgba(128, 128, 128, 0.19) ;
+}
+.button-family{
+    width: 560px;
+    margin:20px auto;
+    padding: 10px 0;
+    border-top: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+}
+.top-border{
+    border-top: 1px solid grey;
+}
