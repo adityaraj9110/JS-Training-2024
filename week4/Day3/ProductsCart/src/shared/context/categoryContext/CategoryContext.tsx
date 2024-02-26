@@ -19,17 +19,12 @@ interface CategoryProviderProps {
 }
 
 export const CategoryProvider = ({ children }: CategoryProviderProps) => {
-  //avoid null use undefined
+ 
   const [selectedCategory, setSelectedCategory] = useState<string | undefined>(
     undefined
   );
 
-  // const contextValue = useMemo<CategoryContextType>(() => ({
-  //   selectedCategory,
-  //   selectCategory: (category: string | undefined) => {
-  //     setSelectedCategory(category);
-  //   }
-  // }));
+
   const contextValue = useMemo<CategoryContextType>(() => ({
     selectedCategory,
     selectCategory: (category: string | undefined) => {
@@ -38,9 +33,6 @@ export const CategoryProvider = ({ children }: CategoryProviderProps) => {
   }), [selectedCategory]);
 
 
-  // const selectCategory = (category: string | undefined) => {
-  //   setSelectedCategory(category);
-  // };
 
   return (
     <CategoryContext.Provider value={contextValue}>

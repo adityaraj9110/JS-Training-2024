@@ -1,0 +1,15 @@
+.pagination{
+    width: 100%;
+    height: 80px;
+    color: aliceblue;
+    background-color: #2771D8;
+    display: flex;
+    justify-content: center;
+}
+
+/* naming convensions of the css  'footer-logo' */
+.footerLogo{
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}

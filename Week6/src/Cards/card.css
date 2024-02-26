@@ -1,0 +1,20 @@
+.card{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid rgba(128, 128, 128, 0.496);
+    border-radius: 10px;
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.499);
+}
+.title{
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.629);
+}
+.description{
+    text-align: justify;
+}

@@ -1,0 +1,25 @@
+.footer-section{
+    height: 89px;
+    color: white;
+    background-color: #38598B;
+}
+.footer-container{
+    width: 1400px;
+    max-width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container h1{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+@media screen and (max-width:568px) {
+    .footer-container{
+        max-width: 92%;
+    }
+}

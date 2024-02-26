@@ -1,8 +1,6 @@
 import Router from "./routes/Routes";
 const App = () => {
-  return (
-    <Router/>
-  );
+  return <Router />;
 };
 
 export default App;
