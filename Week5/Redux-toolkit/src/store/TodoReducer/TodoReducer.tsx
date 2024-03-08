@@ -1,10 +1,8 @@
 import { createAction, createReducer } from "@reduxjs/toolkit";
 
 export type InitialStateType = {
-    todoList: string[],
-}
-
-
+  todoList: string[];
+};
 
 const initialState: InitialStateType = {
   todoList: [],
@@ -23,7 +21,4 @@ export const todoReducer = createReducer(initialState, (builder) => {
     });
 });
 
-
-
 // talk to ritesh about the redux
-
