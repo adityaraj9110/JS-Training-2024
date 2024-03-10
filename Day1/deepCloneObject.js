@@ -36,21 +36,26 @@ function deepCloner(object) {
   return ans;
 }
 
-const obj1 = deepCloner(object);
-obj1.name = "Kishu";
-obj1.fatherName.bankDetails.card.debitCard = "yes";
+const clonedObj = deepCloner(object);
+clonedObj.name = "Kishu";
+clonedObj.fatherName.lastName = "Kr";
 
-for (let key in obj1) {
-  console.log(key, ":", obj1[key]);
-}
-for (let ke in object) {
-  console.log(ke, ":", object[ke]);
-}
 
-const obj2 = {
-  name: "Ayus",
-  age: 12,
-};
+console.log(clonedObj);
+console.log(object);
+// obj1.fatherName.bankDetails.card.debitCard = "yes";
+
+// for (let key in obj1) {
+//   console.log(key, ":", obj1[key]);
+// }
+// for (let ke in object) {
+//   console.log(ke, ":", object[ke]);
+// }
+
+// const obj2 = {
+//   name: "Ayus",
+//   age: 12,
+// };
 // const obj3 = {};
 // obj3.name = obj2.name;
 // obj3.age = obj2.age;

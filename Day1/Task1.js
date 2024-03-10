@@ -27,8 +27,8 @@ const countWays = (array, sizeOfArray, targetSum) => {
 };
 
 const mainFuntion = () => {
-  let array = [-1, 9, 8];
-  let valueOfSum = 8;
+  let array = [-1, 9, 8, -3 ,4];
+  let valueOfSum = 5;
   
   const numberOfWays = countWays(array, 0, valueOfSum);
   console.log(numberOfWays);

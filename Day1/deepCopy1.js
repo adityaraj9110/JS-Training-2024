@@ -5,9 +5,7 @@ const object = {
   fatherName: {
     firstName: "Vijay",
     lastName: "Kumar",
-    hobbies: [
-      {game:"Hockey"},{readding:"Horror"}
-    ],
+    hobbies: [{ game: "Hockey" }, { readding: "Horror" }],
     bankDetails: {
       typeOfAcc: "saving",
       card: {
@@ -27,12 +25,12 @@ const deepCloner = (object) => {
   if (object === null || typeof object !== "object") {
     return object;
   }
-  if(Array.isArray(object)) {
+  if (Array.isArray(object)) {
     let tempArray = [];
-    return object.reduce((acc,element)=>{
-        acc.push(element);
-        return acc;
-    },tempArray)
+    return object.reduce((acc, element) => {
+      acc.push(element);
+      return acc;
+    }, tempArray);
   }
   const returnedObject = {};
 
@@ -41,16 +39,26 @@ const deepCloner = (object) => {
     return acc;
   }, returnedObject);
 };
-const obj1 = deepCloner(object);
-obj1.name = "ayush";
-object.fatherName.bankDetails.card.debitCard = "yes";
+const clonedObj = deepCloner(object);
 
-object.fatherName.hobbies[0]="cricket";
+clonedObj.name = "Ayush";
+clonedObj.fatherName.lastName = "Kr";
+clonedObj.fatherName.hobbies[0].game = "cricket";
 
+console.log(clonedObj.fatherName.hobbies[0].game);
+console.log(object.fatherName.hobbies[0].game);
 
-for (let key in obj1) {
-  console.log(key, ":", obj1[key]);
-}
-for (let key in object) {
-  console.log(key, ":", object[key]);
-}
+// console.log(clonedObj);
+// console.log(object);
+
+// obj1.name = "ayush";
+// object.fatherName.bankDetails.card.debitCard = "yes";
+
+// object.fatherName.hobbies[0]="cricket";
+
+// for (let key in obj1) {
+//   console.log(key, ":", obj1[key]);
+// }
+// for (let key in object) {
+//   console.log(key, ":", object[key]);
+// }

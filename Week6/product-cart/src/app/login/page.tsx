@@ -9,9 +9,10 @@ import { LOGIN } from "@/shared/redux/Constant";
 import login from "../../assests/login.png";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { FormValues, FormValuesForLogin } from "@/shared/utils/DataTypes/ResponsedataType";
-
-
+import {
+  FormValues,
+  FormValuesForLogin,
+} from "@/shared/utils/DataTypes/ResponsedataType";
 
 const Login = () => {
   const form = useForm<FormValuesForLogin>({
@@ -59,7 +60,7 @@ const Login = () => {
             type: LOGIN,
             payload: data,
           });
-           router.push("/")
+          router.push("/");
         }
       }
     }
@@ -118,11 +119,7 @@ const Login = () => {
         </div>
 
         <div className="button-family-1">
-          <button
-            type="submit"
-            className="btn"
-            
-          >
+          <button type="submit" className="btn">
             Login
           </button>
           <button
