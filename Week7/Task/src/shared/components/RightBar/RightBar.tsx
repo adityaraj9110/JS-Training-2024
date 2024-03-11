@@ -13,8 +13,12 @@ import {
 } from "@mui/material";
 import React from "react";
 import { AvatarData, ImageListData, LatestPostData } from "./ImageList";
+import { useSelector } from "react-redux";
+import { modeSelector } from "../../../redux/reducers/ModeReducers";
 
 const RightBar = () => {
+  const { mode } = useSelector(modeSelector);
+
   return (
     <Box flex={2} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
       <Box position="fixed" width={300}>
@@ -45,7 +49,11 @@ const RightBar = () => {
         </Typography>
 
         <List
-          sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
+          sx={{
+            width: "100%",
+            maxWidth: 360,
+            bgcolor: mode === "light" ? "custom.customText" : "custom.main",
+          }}
         >
           {LatestPostData.map((item) => (
             <React.Fragment key={item.alt}>
@@ -61,11 +69,16 @@ const RightBar = () => {
                         sx={{ display: "inline" }}
                         component="span"
                         variant="body2"
-                        color="text.primary"
+                        color= {mode === "light" ? "custom.main" : "custom.customText"}
                       >
                         {item.name}
                       </Typography>
-                      {item.message}
+                      <Typography
+                        variant="body2"
+                        color= {mode === "light" ? "custom.main" : "custom.customText"}
+                      >
+                        {item.message}
+                      </Typography>
                     </React.Fragment>
                   }
                 />
@@ -73,7 +86,6 @@ const RightBar = () => {
               <Divider variant="inset" component="li" />
             </React.Fragment>
           ))}
-          
         </List>
       </Box>
     </Box>

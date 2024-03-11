@@ -1,4 +1,4 @@
-type PostDataType = {
+export type PostDataType = {
   avatarName: string;
   title: string;
   subHeader: string;

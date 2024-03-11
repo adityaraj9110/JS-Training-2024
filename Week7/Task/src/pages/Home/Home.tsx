@@ -6,31 +6,35 @@ import SideBar from "../../shared/components/SideBar/SideBar";
 import Feeds from "../../shared/components/Feeds/Feed";
 import RightBar from "../../shared/components/RightBar/RightBar";
 import { modeSelector } from "../../redux/reducers/ModeReducers";
+import theme from "../../theme";
 
 const Home = () => {
-  const modeChange = useSelector(modeSelector);
+  const { mode } = useSelector(modeSelector);
   // const lightTheme = theme;
 
   const darkTheme = createTheme({
-    // ...theme,
+    ...theme,
+
     palette: {
-      // ...theme.palette,
-      mode: modeChange.mode,
-      primary: {
-        main: blue[600],
-        light: blue[500],
-        dark: blue[900],
-      },
+      ...theme.palette,
+      mode: mode,
+      // primary: {
+      //   main: blue[600],
+      //   light: blue[500],
+      //   dark: blue[900],
+      // },
     },
   });
 
-  console.log(modeChange);
+  // console.log(modeChange);
 
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline>
-        
-        <Box bgcolor={"background.default"} color={"text.primary"}>
+        <Box
+          bgcolor={mode === "light" ? "custom.customText" : "custom.main"}
+          color={mode === "light" ? "custom.main" : "custom.customText"}
+        >
           <Stack direction="row" spacing={2} justifyContent="space-evenly">
             <SideBar />
             <Feeds />
